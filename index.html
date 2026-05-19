@@ -60,11 +60,11 @@
       border-left: 6px solid #38bdf8;
       padding-left: 14px;
     }
-
+    
     .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
     }
 
     .card {
@@ -146,6 +146,7 @@
       <div class="grid">
         <div class="card">
           <h3>ToneLineView</h3>
+          <img src="images/toneline.png" alt="ToneLineView" style="width:100%; border-radius:12px; margin:10px 0;">
           <p>
             音量・音程・音色を五線譜上に統合表示し、
             演奏の全体像を直感的に把握できます。
@@ -154,6 +155,7 @@
 
         <div class="card">
           <h3>DetailView</h3>
+          <img src="images/detail.png" style="width:100%; border-radius:12px; margin:10px 0;">
           <p>
             音響特徴量の時系列変化を詳細に確認し、
             演奏中の細かな変化を分析できます。
@@ -162,6 +164,7 @@
 
         <div class="card">
           <h3>Multiple Takes</h3>
+          <img src="images/compare.png" style="width:100%; border-radius:12px; margin:10px 0;">
           <p>
             複数回の演奏を比較し、傾向やばらつきを可視化することで、
             練習による変化を確認できます。
@@ -170,9 +173,10 @@
 
         <div class="card">
           <h3>AI-assisted Feedback</h3>
+          <img src="images/ai.png" style="width:100%; border-radius:12px; margin:10px 0;">
           <p>
             可視化結果の解釈を補助するために、AIを用いたフィードバック機能を導入しました。
-            奏者が自分の演奏の特徴を理解しやすくなるよう支援します。
+            奏者が自分の音色の特徴を理解しやすくなるよう支援します。
           </p>
         </div>
       </div>
