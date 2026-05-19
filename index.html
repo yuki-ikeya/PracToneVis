@@ -62,9 +62,9 @@
     }
     
     .grid {
-      display: flex;
-      flex-direction: column;
-      gap: 24px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
     }
 
     .card {
@@ -146,7 +146,6 @@
       <div class="grid">
         <div class="card">
           <h3>ToneLineView</h3>
-          <img src="images/toneline.png" alt="ToneLineView" style="width:100%; border-radius:12px; margin:10px 0;">
           <p>
             音量・音程・音色を五線譜上に統合表示し、
             演奏の全体像を直感的に把握できます。
@@ -155,7 +154,6 @@
 
         <div class="card">
           <h3>DetailView</h3>
-          <img src="images/detail.png" style="width:100%; border-radius:12px; margin:10px 0;">
           <p>
             音響特徴量の時系列変化を詳細に確認し、
             演奏中の細かな変化を分析できます。
@@ -164,7 +162,6 @@
 
         <div class="card">
           <h3>Multiple Takes</h3>
-          <img src="images/compare.png" style="width:100%; border-radius:12px; margin:10px 0;">
           <p>
             複数回の演奏を比較し、傾向やばらつきを可視化することで、
             練習による変化を確認できます。
@@ -173,7 +170,6 @@
 
         <div class="card">
           <h3>AI-assisted Feedback</h3>
-          <img src="images/ai.png" style="width:100%; border-radius:12px; margin:10px 0;">
           <p>
             可視化結果の解釈を補助するために、AIを用いたフィードバック機能を導入しました。
             奏者が自分の音色の特徴を理解しやすくなるよう支援します。
@@ -185,12 +181,18 @@
     <section>
       <h2>System Image</h2>
       <p>
-        以下に、システム画面や可視化結果の例を掲載できます。
+        ロングトーン可視化システムの実行の流れは以下です。
       </p>
-      <div class="image-box">
-        ここにスクリーンショットを追加<br />
-        例：&lt;img src="images/timeline.png" alt="ToneLineView"&gt;
-      </div>
+      <video controls style="width:100%; border-radius:16px; margin-top:16px;">
+        <source src="images/LongTone.mp4" type="video/mp4">
+        お使いのブラウザは動画に対応していません。
+      </video>
+
+      <p>
+        現在開発中のフレーズに対応したToneLineViewの画面は以下です。
+      </p>
+      <img src="images/ToneLineView.png" alt="ToneLineView" style="width:100%; border-radius:12px; margin:10px 0;">
+      
     </section>
 
     <section>
@@ -206,8 +208,14 @@
     <section>
       <h2>Result</h2>
       <p>
-        本研究は、査読付き学会WISSで登壇発表を行ったほか、
-        情報処理学会全国大会および音楽情報科学研究会にて学生奨励賞を受賞しました。
+        【参加学会】
+        - WISS 2025（査読付き）：https://www.wiss.org/WISS2025Proceedings/ https://www.wiss.org/WISS2025/
+        - 情報処理学会第88回全国大会：https://www.ipsj.or.jp/event/taikai/88/WEB/index.html
+        - 情報処理学会第145回音楽情報科学研究会：https://www.ipsj.or.jp/kenkyukai/event/mus145.html
+
+        【受賞歴】
+        - 情報処理学会第88回全国大会：学生奨励賞https://www.ocha.ac.jp/news/d017639.html
+        - 情報処理学会第145回音楽情報科学研究会：学生奨励賞（Best Application部門）https://www.ocha.ac.jp/news/d017590.html
       </p>
     </section>
   </main>
